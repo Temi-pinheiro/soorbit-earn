@@ -28,7 +28,7 @@ export default function Home() {
           <img
             src='/stars.png'
             alt='stars background'
-            className='absolute inset-0 w-full h-full md:h-screen mix-blend-color-dodge '
+            className='absolute inset-0 w-full h-full md:h-screen mix-blend-color-dodge max-md:object-cover '
           />
           <div className='flex flex-col items-center justify-center w-full h-full relative'>
             <h1 className='text-[42px] md:text-[100px] font-extrabold max-w-[1185px] text-center text-white leading-none'>

@@ -1,113 +1,113 @@
-import Image from "next/image";
+/* eslint-disable @next/next/no-img-element */
+import { Metadata } from 'next';
+import Image from 'next/image';
+export const metadata: Metadata = {
+  title: 'Sorbit Earn',
+  description:
+    'Aiming to connect crypto projects with talented individuals through bounties, freelance gigs, and grants, enabling participants to earn in Stellar-based tokens.p',
+  icons: ['/favicon.svg'],
+};
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className='w-full h-full'>
+      <Group key='hero'>
+        <div className='w-full h-screen gr-bg flex flex-col items-center justify-center relative'>
+          <img
+            src='/stars.png'
+            alt='stars background'
+            className='absolute inset-0 w-full h-screen mix-blend-color-dodge '
+          />
+          <div className='flex flex-col items-center justify-center w-full h-full relative'>
+            <h1 className='text-[100px] font-extrabold max-w-[1185px] text-center text-white leading-none'>
+              Unlock the talent potential of Stellar
+            </h1>
+            <p className='text-[#D4D5D8] font-medium text-[30px] max-w-[735px] mt-[60px] text-center'>
+              Access a global pool of crypto-native talent. Build the
+              Future,Together.
+            </p>
+
+            <a
+              href='https://docs.google.com/forms/d/e/1FAIpQLScKiprtl1iN4uF1Vb8nYdgL2Ej8LVAv3e_Xbho6itn_6Ekx6g/viewform?usp=sf_link'
+              target='_blank'
+              className='py-2 px-5 rounded-full bg-[#431F8C] text-white text-lg font-semibold form-btn border-white inline-flex mt-20'
+            >
+              Join waitlist
+            </a>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
+      </Group>
+      <Group key='space'>
+        <div className='w-full h-screen flex flex-col px-[114px] pt-[140px] bg-[#0C0911]'>
+          <div className='border border-[#2B2B2E] flex items-center rounded-[40px] py-[108px] justify-between gap-10'>
+            <Group key='left'>
+              <div className='flex flex-col pl-[91px] max-w-[692px] shrink-0'>
+                <img src='/badge.svg' alt='badge' className='w-[70px]' />
+                <h3 className='mt-20 font-bold text-[50px] text-white'>
+                  Build on Stellar.{' '}
+                  <span className='together p-1'>Together</span>
+                </h3>
+                <p className='text-[#D4D5D8] text-2xl font-medium mt-10'>
+                  Sorbit Earn connects founders with crypto experts, building a
+                  stronger Stellar community through collaboration. Leading to
+                  more successful projects and a vibrant network of builders.
+                </p>
+                <a
+                  href='https://docs.google.com/forms/d/e/1FAIpQLScKiprtl1iN4uF1Vb8nYdgL2Ej8LVAv3e_Xbho6itn_6Ekx6g/viewform?usp=sf_link'
+                  target='_blank'
+                  className='py-2 px-5 rounded-full bg-[#431F8C] text-white text-lg font-semibold form-btn border-white inline-flex mt-20 w-fit'
+                >
+                  Join waitlist
+                </a>
+              </div>
+            </Group>
+            <Group key='right'>
+              <img src='/mockup.png' alt='mockup' className='max-w-[750px]' />
+            </Group>
+          </div>
+        </div>
+      </Group>
+      <Group key='footer'>
+        <div className='bg-[#0C0911] pt-[120px] flex flex-col px-[114px] pb-[106px]'>
+          <img src='/icon.svg' alt='icon' className='max-w-[150px]' />
+          <div className='flex items-center gap-x-[35px] mt-[65px]'>
+            <span className='text-[#82848A] font-semibold text-xl'>
+              © 2024 Sorbit. All rights reserved.
             </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+            <a>
+              <svg
+                width='24'
+                height='25'
+                viewBox='0 0 24 25'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M13.8771 10.6818L22.5577 0.800598H20.5014L12.9609 9.37853L6.94287 0.800598H0L9.10247 13.7732L0 24.1339H2.05628L10.0141 15.0733L16.371 24.1339H23.3138M2.79843 2.31911H5.95746L20.4999 22.6899H17.3401'
+                  fill='#82848A'
+                />
+              </svg>
+            </a>
+            <a>
+              {' '}
+              <svg
+                width='24'
+                height='25'
+                viewBox='0 0 24 25'
+                fill='none'
+                xmlns='http://www.w3.org/2000/svg'
+              >
+                <path
+                  d='M12.9306 11.275C12.9394 11.2641 12.9474 11.2524 12.9532 11.24V11.275H12.9306ZM23.6472 0.800568V24.1339H0.313843V0.800568H23.6472ZM7.55084 9.75837H4.07124V20.2248H7.55084V9.75837ZM7.77831 6.52234C7.75644 5.49422 7.02364 4.71255 5.8329 4.71255C4.64364 4.71255 3.86562 5.49422 3.86562 6.52234C3.86562 7.52497 4.6203 8.32997 5.7877 8.32997H5.8103C7.02364 8.32997 7.77831 7.52497 7.77831 6.52234ZM20.0954 14.223C20.0954 11.0089 18.3782 9.51337 16.0894 9.51337C14.2438 9.51337 13.4177 10.5276 12.9532 11.24V9.75837H9.47511C9.51958 10.7398 9.47511 20.2248 9.47511 20.2248H12.9532V14.3798C12.9532 14.0634 12.9758 13.7564 13.0677 13.5311C13.32 12.9084 13.8931 12.258 14.8527 12.258C16.1134 12.258 16.6158 13.2161 16.6158 14.6248V20.2248H20.0947L20.0954 14.223Z'
+                  fill='#82848A'
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </Group>
     </main>
   );
 }
+
+const Group = ({ children }: { children: any }) => <>{children}</>;

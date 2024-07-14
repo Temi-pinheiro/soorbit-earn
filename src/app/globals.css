@@ -2,32 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
+.gr-bg {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    250.73deg,
+    #0c111d 16.29%,
+    #0c0625 69.96%,
+    #1a0641 112.4%
+  );
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.form-btn {
+  position: relative;
+
+  box-shadow: 0px 0px 11.8px 0px rgba(76, 43, 161, 1);
+  border: 1.31px solid;
+  /* background-color: white; */
+  /* -webkit-border-image: border-image-source; */
+  /* border-image: fill; */
+  /* -webkit-color */
+}
+
+.form-btn::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(180deg, #c0a4ff 0%, rgba(67, 46, 115, 0) 100%);
+  z-index: -1;
+  border-radius: 10px; /* Adjust as needed */
+}
+
+.form-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  z-index: -1;
+  border-radius: 10px; /* Adjust as needed */
+  margin: 5px; /* Adjust as needed to match the border width */
+}
+
+.together {
+  background: linear-gradient(90deg, #8e67dd -50.63%, #e4e7ec 273.66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
 }

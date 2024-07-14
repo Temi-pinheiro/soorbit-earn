@@ -31,7 +31,8 @@ export default function Home() {
             className='absolute inset-0 w-full h-full md:h-screen mix-blend-color-dodge max-md:object-cover '
           />
           <div className='flex flex-col items-center justify-center w-full h-full relative'>
-            <h1 className='text-[42px] md:text-[100px] font-extrabold max-w-[1185px] text-center text-white leading-none'>
+            <img src='/favicon.svg' alt='icon' style={{ scale: 2 }} />
+            <h1 className='text-[42px] md:text-[100px] font-extrabold max-w-[1185px] text-center text-white leading-none mt-16 md:mt-10'>
               Unlock the talent potential of Stellar
             </h1>
             <p className='text-[#D4D5D8] font-medium text-xl max-md:px-10 md:text-[30px] max-w-[735px] mt-[60px] text-center'>
@@ -78,9 +79,9 @@ export default function Home() {
               </Group>
               <Group key='right'>
                 <img
-                  src='/mockup.png'
+                  src='/iphone.png'
                   alt='mockup'
-                  className='max-w-[300px] md:max-w-[750px] w-full max-md:ml-auto'
+                  className='max-w-[500px] md:max-w-[750px] md:translate-x-[-12%] w-full max-md:ml-auto'
                 />
               </Group>
             </div>

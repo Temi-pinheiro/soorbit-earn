@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className='w-full h-full relative'>
-      <nav className='w-full absolute inset-0 px-6 md:px-[114px] z-10 bg-transparent'>
+      <nav className='w-full absolute inset-0 px-6 md:px-[114px] z-10 bg-transparent h-[76px]'>
         <div className='max-w-[1440px] flex items-center justify-between mx-auto py-7'>
           <img src='/icon.svg' alt='icon' className='max-w-[150px]' />
           <a

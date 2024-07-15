@@ -15,7 +15,7 @@ export default function Home() {
         <div className='max-w-[1440px] flex items-center justify-between mx-auto py-7'>
           <img src='/icon.svg' alt='icon' className='max-w-[150px]' />
           <a
-            href='https://docs.google.com/forms/d/e/1FAIpQLScKiprtl1iN4uF1Vb8nYdgL2Ej8LVAv3e_Xbho6itn_6Ekx6g/viewform?usp=sf_link'
+            href='https://tally.so/r/mZJvly'
             target='_blank'
             className='py-2 px-5 rounded-full bg-[#431F8C] text-white text-lg font-semibold inline-flex w-fit'
           >
@@ -41,7 +41,7 @@ export default function Home() {
             </p>
 
             <a
-              href='https://docs.google.com/forms/d/e/1FAIpQLScKiprtl1iN4uF1Vb8nYdgL2Ej8LVAv3e_Xbho6itn_6Ekx6g/viewform?usp=sf_link'
+              href='https://tally.so/r/mZJvly'
               target='_blank'
               className='py-2 px-5 rounded-full bg-[#431F8C] text-white text-lg font-semibold form-btn inline-flex mt-20'
             >
@@ -69,7 +69,7 @@ export default function Home() {
                     builders.
                   </p>
                   <a
-                    href='https://docs.google.com/forms/d/e/1FAIpQLScKiprtl1iN4uF1Vb8nYdgL2Ej8LVAv3e_Xbho6itn_6Ekx6g/viewform?usp=sf_link'
+                    href='https://tally.so/r/mZJvly'
                     target='_blank'
                     className='py-2 px-5 rounded-full bg-[#431F8C] text-white text-lg font-semibold form-btn inline-flex mt-20 w-fit'
                   >
